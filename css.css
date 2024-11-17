@@ -3,11 +3,19 @@ body {
   color: white; /* White text color */
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 1.4em;
+
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 img {
   width: 40%; /* Images occupy 40% of container width */
   animation: funny 0.4s infinite linear; /* Fixed typo in 'infinite' */
+
 }
 
 @keyframes funny {
