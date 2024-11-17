@@ -29,12 +29,7 @@
     <div id="downloadButtonContainer">
       <button disabled>Download File</button>
     </div>
-    <button id="reduceTimeButton">Reduce Time</button>
-
-    <script data-num-rows="10"
-    src="https://s3-us-west-2.amazonaws.com/kaboodle/kaboodle.js"
-    type="text/javascript"></script> 
-  
+    <button id="reduceTimeButton">Reduce Time</button>  
 
     <script>
       document.getElementById("reduceTimeButton").addEventListener("click", function() {
@@ -54,7 +49,7 @@
       }, 1000);
     </script>
     <script>
-      var timeLeft = 1; // Set the countdown time in seconds
+      var timeLeft = 60; // Set the countdown time in seconds
       var countdownElement = document.getElementById("countdown");
       var downloadButtonContainer = document.getElementById("downloadButtonContainer");
 
@@ -62,7 +57,7 @@
         if (timeLeft <= 0) {
           clearInterval(countdownTimer);
           countdownElement.innerHTML = "Download is ready!";
-          downloadButtonContainer.innerHTML = '<a href="/AmIInSheffield.zip"><button>Download File</button></a>';
+          downloadButtonContainer.innerHTML = '<a href="/amiinsheffield.github.io/AmIInSheffield.zip"><button>Download File</button></a>';
         } else {
           countdownElement.innerHTML = timeLeft + " seconds remaining";
         }
